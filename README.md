@@ -10,9 +10,13 @@ en C y python para demostrar conceptos en RTOS
 
 # Proyecto 1
 
-Clonar repositorio y colocarse en ubicación de archivos
+Clonar repositorio. 
+Nota: esto clona el repositorio a la ubicación dónde se esté trabajando. Considerar copiar en alguna ruta conocida. 
 ## Linux
 ```bash
+    #Considerar ubicación de archivo. Ejemplo: directorio src para proyectos 
+    #~ $ mkdir src
+    #~ $ cd src
     git clone https://github.com/estuardo-02/RPi.git
 ```
 ### parte 1 compilar archivos
