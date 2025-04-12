@@ -9,7 +9,7 @@ Estuardo Castillo 21559
 Programa para 'recepción' de imagenes en un pipe nombrado y transformación sencilla
 en este caso se implementa la librería pillow para la transformación a formato de blanco y negro. 
 
-captura_camara.py
+procesador_imagen.py
 """
 import os
 import time
