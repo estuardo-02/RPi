@@ -78,4 +78,7 @@ def receive_and_transform():
 
 if __name__ == "__main__":
     print("[RECEPTOR] Inicializando programa receptor de imagenes")
-    receive_and_transform()
+    try:
+        receive_and_transform()
+    except KeyboardInterrupt:
+        print("\n[RECEPTOR] Finalizando programa...")
