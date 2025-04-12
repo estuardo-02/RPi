@@ -14,9 +14,9 @@ Clonar repositorio.
 Nota: esto clona el repositorio a la ubicación dónde se esté trabajando. Considerar copiar en alguna ruta conocida. 
 ## Linux
 ```bash
-    #Considerar ubicación de archivo. Ejemplo: directorio src para proyectos 
-    #~ $ mkdir src
-    #~ $ cd src
+    #Considerar ubicación de archivo. Ejemplo: directorio para proyectos 
+    #~ $ mkdir proyectos
+    #~ $ cd proyectos
     git clone https://github.com/estuardo-02/RPi.git
 ```
 ### parte 1 compilar archivos
@@ -30,4 +30,13 @@ Emplear dos terminales. Ejecutar ./productor primero
 ```bash
     ./productor [#mensajes] [#productores]
     ./consumidor
+```
+### parte 2 uso
+Regresar a ubicación de clonación. Considerar usar dos terminales para poder interrumpir programas con Ctrl+C
+```bash
+    #~ $ ../RPi/digital3/proyecto1/parte1/ cd ..
+    cd parte2/
+    python3 captura_camara.py
+    #En otra terminal, misma ubicación:
+    python3 procesador_imagen.py
 ```
