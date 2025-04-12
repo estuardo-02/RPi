@@ -32,11 +32,11 @@ Emplear dos terminales. Ejecutar ./productor primero
     ./consumidor
 ```
 ### parte 2 uso
-Asumiendo que esté en carpeta de parte1. Considerar usar dos terminales para poder interrumpir programas con Ctrl+C
+Asumiendo que esté en carpeta de parte1. Considerar usar dos terminales para poder interrumpir programas con Ctrl+C o empujar a background
 ```bash
     #~ $ ../RPi/digital3/proyecto1/parte1/ cd ..
     cd parte2/
-    python3 captura_camara.py
+    python3 captura_camara.py &
     #En otra terminal, misma ubicación:
     python3 procesador_imagen.py
 ```
