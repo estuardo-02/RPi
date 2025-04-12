@@ -31,6 +31,12 @@ Emplear dos terminales. Ejecutar ./productor primero
     ./productor [#mensajes] [#productores]
     ./consumidor
 ```
+pip install Pillow  
+### parte 2 dependencias
+Installar pillow 
+```bash
+    pip install Pillow
+```
 ### parte 2 uso
 Asumiendo que esté en carpeta de parte1. Considerar usar dos terminales para poder interrumpir programas con Ctrl+C o empujar a background
 ```bash
