@@ -16,6 +16,8 @@ Para fines de demostración de creación de pipes se omite este método para des
 Para la creación de pipes se emplea el método mkfifo() necesario incluir <sys/types.h> & <sys/stat.h>; Resulta conveniente para 
 crear múltiples pipes nombrados cuando se tiene el nombre de la tubería en una cadena, para la creación de la cadena
 se emplea snprintf, similar a sprintf (se explicó en archivo productor).
+argumento 0666 se refiere a los permisos que se asignarán al canal FIFO (First In, First Out) que está creando.
+En este caso, se están especificando permisos para que el FIFO sea legible y escribible por el propietario, el grupo y otros usuarios.
 Información adicional: https://manpages.ubuntu.com/manpages/focal/es/man3/mkfifo.3.html
 
 consumidor.c
