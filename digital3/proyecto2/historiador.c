@@ -20,6 +20,8 @@ El índice de escritura y lectura se gestiona usando la variable `events` y oper
 - Considerar el manejo de errores al abrir archivos y al recibir datos.
 - Si se requiere almacenar más eventos, aumentar el tamaño del buffer circular, pero considerar el uso de memoria.
 - Para ambientes de producción, implementar logs rotativos o almacenamiento persistente adicional.
+
+Se emplean funciones de goto, convenientes para el menu
 */
 
 //*************LIBRERIAS*************//
@@ -157,7 +159,7 @@ int main(int argc, char *argv[])
     //*************CICLO*************//
     while(1)
     {
-        menu:
+        opciones:
         memset(input, 0, sizeof(input));
         printf("Press 'C' to send command\nPress 'L' to see live events\nPress 'R' to see all previous events\nPress S to save all registered events\nPress 'X' any moment to quit\n"); //Escribir
         fflush(stdout); //Escribir
@@ -200,7 +202,7 @@ int main(int argc, char *argv[])
 
                 else if(msg[0] == 'q' || msg[0] == 'Q') //Si se presiona q
                 {
-                    goto menu; //Salir al menu
+                    goto opciones; //Salir al menu
                 }
 
             } while((msg[0] != 'Q') || (msg[0] != 'q'));
@@ -270,7 +272,7 @@ int main(int argc, char *argv[])
         else if(input[0] == 'L' || input[0] == 'l') //Si el input es l...
         {
             estado = 1; //Se cambia el estado para mostrar eventos en la terminal
-            repeat: //Label
+            regresar: //Label
             memset(input, 0, sizeof(input)); //Limpiar mensaje
             printf("Press Q to quit\n"); //Mostrar en la terminal
             fflush(stdout); //Escribir
@@ -283,7 +285,7 @@ int main(int argc, char *argv[])
 
             else
             {
-                goto repeat; //Otra cosar repetir
+                goto regresar; //Si no se ingresa lo solicitado
             }
 
         }
