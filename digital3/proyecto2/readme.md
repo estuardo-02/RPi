@@ -69,8 +69,6 @@ Las conexiones se realizan con cada una de las Raspberry Pi.
 En ambos códigos de las RTU hay definiciones en la parte superior para ver en qué pin se encuentra cada cosa.  
 **Importante:** Los pines definidos utilizan el pinout de wiringPi.
 
-Consulta las imágenes `diagrama-rtu1` y `diagrama-rtu2` para ver las conexiones.
-
 El ESP32 únicamente necesita estar encendido, ya que se comunica mediante UDP con las RTUs y no requiere conexiones externas.
 
 ---
@@ -116,7 +114,10 @@ Para utilizar las aplicaciones IoT, necesitas la IP del webserver.
 Esta IP la imprime el ESP32 después de ejecutar el programa en la terminal del Arduino IDE.
 
 Accede desde un navegador en un dispositivo que también esté en la misma red.
-
+La impresión en consola deberá verse así:
+```bash
+WiFi connected! IP address: <IP en red>
+```
 ---
 
 Con esto ya tienes todo lo necesario para utilizar el sistema y que funcione correctamente.
