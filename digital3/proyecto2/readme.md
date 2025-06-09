@@ -61,6 +61,15 @@ Es necesario tener instalado el paquete de placa del ESP32.
 
 3. Cambia la SSID, contraseña, puerto local y las IP de ambas RTUs en el código fuente antes de compilar.
 
+    ```
+    const char* ssid = "NETGEAR_iemtbmUVG"; //nombre de la red
+    const char* password = "iemtbmUVG"; //Contraseña
+    
+    const char * udpAddress = "10.0.0.11"; //IP address del RTU1
+    const char * udpAddress2 = "10.0.0.15"; //IP address del RTU2
+    
+    const int udpPort = 2006; //Puerto local
+    ```
 ---
 
 ## 2. Conexiones
