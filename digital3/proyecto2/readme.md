@@ -2,6 +2,12 @@
 # Sistema SCADA 
 Gabriel Carrera 21219
 Estuardo Castillo 21559
+
+## Video demostrativo
+
+[![Ver video en YouTube](https://www.youtube.com/watch?v=M3RgShS5NPY)](https://www.youtube.com/watch?v=M3RgShS5NPY)
+
+
 ## 1. Compilación de los programas
 
 Este proyecto consta de cuatro programas distintos. A continuación se describe cómo compilar cada uno de ellos.
