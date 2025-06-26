@@ -5,8 +5,7 @@
 
 ## Resumen
 
-El siguiente repositorio apunta a recolectar variedad de proyectos para la Raspberry Pi. En gran parte se tratan de pruebas de concepto empleando librerías básicas
-en C y python para demostrar conceptos en RTOS
+El siguiente proyecto hace uso de pipes nombrados y librerías de multithreading así como estrategias de fork() para tener múltiples hilos corriendo en un solo dispositivo. Se emplean dispositivos RPi 4B
 
 # Proyecto 1
 
